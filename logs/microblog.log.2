@@ -1,0 +1,128 @@
+2024-02-28 16:59:31,432 ERROR: Exception on /explore [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Desktop\project 27\app\routes.py", line 54, in explore
+    return render_template('index.html', title='Explore', posts=posts.items,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "c:\Users\Hp\OneDrive\Desktop\project 27\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "c:\Users\Hp\OneDrive\Desktop\project 27\app\templates\base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Desktop\project 27\app\templates\index.html", line 5, in block 'content'
+    {{ form.hidden_tag() }}
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\jinja2\environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2024-02-28 17:13:17,234 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 17:13:59,788 ERROR: Exception on /user/susan [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Desktop\project 27\app\routes.py", line 135, in user
+    query = user.posts.select().order_by(Post.timestamp.desc())
+            ^^^^^^^^^^^^^^^^^
+AttributeError: 'AppenderQuery' object has no attribute 'select'
+2024-02-28 17:16:54,623 ERROR: Exception on /user/susan [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Desktop\project 27\app\routes.py", line 135, in user
+    query = user.posts.select().order_by(Post.timestamp.desc())
+            ^^^^^^^^^^^^^^^^^
+AttributeError: 'AppenderQuery' object has no attribute 'select'
+2024-02-28 17:49:45,658 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 17:50:51,856 ERROR: Exception on /user/susan [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Desktop\project 27\app\routes.py", line 135, in user
+    query = user.posts.select().order_by(Post.timestamp.desc())
+            ^^^^^^^^^^^^^^^^^
+AttributeError: 'AppenderQuery' object has no attribute 'select'
+2024-02-28 17:52:33,493 ERROR: Exception on /user/susan [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Desktop\project 27\app\routes.py", line 135, in user
+    query = user.posts.select().order_by(Post.timestamp.desc())
+            ^^^^^^^^^^^^^^^^^
+AttributeError: 'AppenderQuery' object has no attribute 'select'
+2024-02-28 17:57:42,932 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]

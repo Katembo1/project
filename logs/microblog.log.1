@@ -1,0 +1,118 @@
+2024-02-28 17:58:12,698 ERROR: Exception on /user/susan [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Desktop\project 27\app\routes.py", line 135, in user
+    query = user.posts.select().order_by(Post.timestamp.desc())
+            ^^^^^^^^^^^^^^^^^
+AttributeError: 'AppenderQuery' object has no attribute 'select'
+2024-02-28 17:59:21,456 ERROR: Exception on /user/susan [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Desktop\project 27\app\routes.py", line 135, in user
+    query = user.posts.select().order_by(Post.timestamp.desc())
+            ^^^^^^^^^^^^^^^^^
+AttributeError: 'AppenderQuery' object has no attribute 'select'
+2024-02-28 18:00:56,730 ERROR: Exception on /user/susan [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Desktop\project 27\app\routes.py", line 135, in user
+    query = user.posts.select()
+            ^^^^^^^^^^^^^^^^^
+AttributeError: 'AppenderQuery' object has no attribute 'select'
+2024-02-28 18:01:03,022 ERROR: Exception on /user/susan [GET] [in C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py:828]
+Traceback (most recent call last):
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hp\OneDrive\Desktop\project 27\app\routes.py", line 135, in user
+    query = user.posts.select()
+            ^^^^^^^^^^^^^^^^^
+AttributeError: 'AppenderQuery' object has no attribute 'select'
+2024-02-28 18:02:24,784 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:02:28,748 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:04:19,068 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:04:44,990 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:05:06,508 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:05:35,086 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:06:03,610 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:09:56,087 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:10:33,799 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:10:54,409 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:14:50,374 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:15:20,220 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:15:25,649 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:15:30,273 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:15:47,762 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:18:48,425 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:19:58,810 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:20:01,389 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:21:44,228 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:21:55,600 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:24:23,990 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:34:50,204 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:34:53,822 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:36:03,951 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:41:44,223 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:41:58,086 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:42:57,846 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:43:05,111 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:43:37,107 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:43:40,772 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:44:03,558 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-02-28 18:44:08,152 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-03-02 13:56:36,039 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
+2024-03-02 13:56:49,999 INFO: Microblog startup [in c:\Users\Hp\OneDrive\Desktop\project 27\app\__init__.py:45]
