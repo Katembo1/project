@@ -5,4 +5,3 @@ from app import cli
 def make_shell_context():
     return {'db': db, 'User': User, 'Post': Post}
 
-app.run()
